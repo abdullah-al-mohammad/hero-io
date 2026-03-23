@@ -1,0 +1,291 @@
+[
+  {
+    "image": "https://cdn.simpleicons.org/spotify",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "id": 1,
+    "description": "Spotify is a leading music streaming platform that transforms the way users discover and enjoy audio content. With access to millions of songs, podcasts, and curated playlists, it provides a personalized listening experience tailored to individual tastes. Users can create playlists, follow artists, and explore trending music worldwide. Its smart recommendation system learns from listening habits to deliver content users truly love, making every session engaging and unique.",
+    "size": 60,
+    "reviews": 5000,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2880 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/instagram",
+    "title": "Instagram",
+    "companyName": "Meta",
+    "id": 2,
+    "description": "Instagram is a visually driven social platform that allows users to share photos, videos, and stories with a global audience. It offers creative tools like filters, reels, and live streaming to enhance content. Users can connect with friends, follow influencers, and explore trending topics through a personalized feed. With powerful engagement features and business tools, Instagram is both a social and creative hub.",
+    "size": 45,
+    "reviews": 7000,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 4050 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/youtube",
+    "title": "YouTube",
+    "companyName": "Google",
+    "id": 3,
+    "description": "YouTube is the world's largest video-sharing platform where users can watch, upload, and share videos across various categories. From education and tutorials to entertainment and live streaming, it provides endless content. Its recommendation system ensures users always discover relevant videos, while creators benefit from monetization and global reach.",
+    "size": 70,
+    "reviews": 10000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/whatsapp",
+    "title": "WhatsApp",
+    "companyName": "Meta",
+    "id": 4,
+    "description": "WhatsApp is a fast, secure, and reliable messaging app that allows users to send texts, make voice and video calls, and share media instantly. With end-to-end encryption, it ensures privacy in communication. Features like group chats, status updates, and multi-device support make it a complete communication tool for personal and professional use.",
+    "size": 20,
+    "reviews": 3000,
+    "ratingAvg": 4.7,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1790 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/googlemaps",
+    "title": "Google Maps",
+    "companyName": "Google",
+    "id": 5,
+    "description": "Google Maps is a powerful navigation app that helps users find directions, explore nearby places, and travel efficiently. It provides real-time traffic updates, route suggestions, and offline maps. Users can discover restaurants, businesses, and attractions with ratings and reviews, making it an essential everyday tool.",
+    "size": 50,
+    "reviews": 1500,
+    "ratingAvg": 4.4,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 670 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/gmail",
+    "title": "Gmail",
+    "companyName": "Google",
+    "id": 6,
+    "description": "Gmail is a powerful email service designed for both personal and professional communication. It offers a clean interface, smart organization features, and strong security to manage emails efficiently.",
+    "size": 25,
+    "reviews": 2500,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1120 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/facebook",
+    "title": "Facebook",
+    "companyName": "Meta",
+    "id": 7,
+    "description": "Facebook is a global social networking platform that connects people, communities, and businesses. Users can share updates, join groups, and interact through posts and messages.",
+    "size": 55,
+    "reviews": 9000,
+    "ratingAvg": 4.4,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/tiktok",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 9,
+    "description": "TikTok is a short-form video platform that allows users to create, share, and discover engaging content using music, filters, and creative tools.",
+    "size": 80,
+    "reviews": 12000,
+    "ratingAvg": 4.6,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/netflix",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 10,
+    "description": "Watch movies and TV shows online.",
+    "size": 90,
+    "reviews": 8500,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4700 }
+    ]
+  },
+
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "id": 11,
+    "description": "Professional networking platform.",
+    "size": 40,
+    "reviews": 4200,
+    "ratingAvg": 4.4,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1950 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/googledrive",
+    "title": "Google Drive",
+    "companyName": "Google",
+    "id": 12,
+    "description": "Store and share files securely.",
+    "size": 35,
+    "reviews": 3800,
+    "ratingAvg": 4.5,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 1790 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/dropbox",
+    "title": "Dropbox",
+    "companyName": "Dropbox Inc.",
+    "id": 13,
+    "description": "Cloud storage and file sharing.",
+    "size": 30,
+    "reviews": 2600,
+    "ratingAvg": 4.3,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1220 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/pinterest",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "id": 14,
+    "description": "Discover creative ideas and inspiration.",
+    "size": 50,
+    "reviews": 5000,
+    "ratingAvg": 4.5,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2430 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/googlephotos",
+    "title": "Google Photos",
+    "companyName": "Google",
+    "id": 15,
+    "description": "Backup and organize your photos.",
+    "size": 45,
+    "reviews": 4500,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/x",
+    "title": "Twitter (X)",
+    "companyName": "X Corp",
+    "id": 17,
+    "description": "Stay updated with real-time news.",
+    "size": 35,
+    "reviews": 6000,
+    "ratingAvg": 4.3,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/telegram",
+    "title": "Telegram",
+    "companyName": "Telegram LLC",
+    "id": 18,
+    "description": "Fast and secure cloud messaging.",
+    "size": 25,
+    "reviews": 5500,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2980 }
+    ]
+  }
+]
