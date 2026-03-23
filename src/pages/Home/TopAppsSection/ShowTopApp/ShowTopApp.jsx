@@ -52,7 +52,7 @@ const ShowTopApp = ({ app }) => {
       <Link to={`/details/${id}`}>
         <div className="card bg-base-100 shadow-sm">
           <figure>
-            <img className="" src={image} alt="apps" />
+            <img className="w-40" src={image} alt="apps" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>

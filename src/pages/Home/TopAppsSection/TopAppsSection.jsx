@@ -1,9 +1,8 @@
-import { use } from 'react';
 import { Link } from 'react-router';
 import ShowTopApp from './ShowTopApp/ShowTopApp';
 
 const TopAppsSection = ({ heroDataPromise }) => {
-  const data = use(heroDataPromise);
+  const data = heroDataPromise;
 
   return (
     <div>
@@ -17,7 +16,7 @@ const TopAppsSection = ({ heroDataPromise }) => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <Link to={'/details'}>
+        <Link to={'/allApps'}>
           <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">
             Show All
           </button>

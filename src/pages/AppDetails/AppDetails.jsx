@@ -12,13 +12,11 @@ const AppDetails = () => {
   const data = useLoaderData();
 
   const showData = data.find(app => app.id === parseInt(id));
-  console.log(showData);
   if (!showData) {
     return <span>data not found...</span>;
   }
 
   const { image, title, downloads, ratingAvg, reviews, ratings, description } = showData;
-  console.log(image);
 
   const formatLargeNumber = num => {
     const formatter = new Intl.NumberFormat('en-US', {
@@ -37,7 +35,7 @@ const AppDetails = () => {
       toast.success(`${title} installed successfully 🎉`);
     }
   };
-  const reviewData = Array.isArray(ratings) ? ratings : [];
+  const ratingData = ratings.slice().reverse();
   return (
     <>
       <div className="card lg:card-side bg-base-100 shadow-sm">
@@ -78,18 +76,19 @@ const AppDetails = () => {
           </button>
         </div>
       </div>
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[300px] pb-5">
         <h3 className="mt-5">Ratings</h3>
-        <ResponsiveContainer>
-          <ComposedChart layout="vertical" data={reviewData}>
-            <XAxis type="number" domain={[0, 100]} />
-            <YAxis dataKey="name" type="category" />
+        <ResponsiveContainer className={'pb-5'}>
+          <ComposedChart layout="vertical" data={ratingData}>
+            <XAxis type="number" axisLine={false} tickLine={false} domain={[0, 100]} />
+            <YAxis dataKey="name" axisLine={false} tickLine={false} type="category" />
             <Tooltip />
 
             <Bar dataKey="count" barSize={15} fill="#FF8811" />
           </ComposedChart>
         </ResponsiveContainer>
-        <div>
+        <div className="border-b border-gray-300"></div>
+        <div className="pt-5">
           <h3 className="font-semibold mb-5">Description</h3>
           <p>{description}</p>
         </div>

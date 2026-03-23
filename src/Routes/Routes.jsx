@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router';
 import Root from '../Root/Root';
+import AllApps from '../pages/AllApps/AllApps';
 import AppDetails from '../pages/AppDetails/AppDetails';
 import Home from '../pages/Home/Home';
 
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
           return data;
         },
         Component: AppDetails,
+      },
+      {
+        path: 'allApps',
+        Component: AllApps,
       },
     ],
   },
