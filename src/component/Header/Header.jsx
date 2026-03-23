@@ -6,13 +6,13 @@ const Header = () => {
   const links = (
     <>
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/'}>Home</NavLink>
       </li>
       <li>
-        <NavLink>App</NavLink>
+        <NavLink to={'allApps'}>App</NavLink>
       </li>
       <li>
-        <NavLink>Installation</NavLink>
+        <NavLink to={'installed'}>Installation</NavLink>
       </li>
     </>
   );
