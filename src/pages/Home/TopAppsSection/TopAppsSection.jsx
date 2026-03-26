@@ -1,8 +1,11 @@
 import { Link } from 'react-router';
+import NoData from '../../NotFound/NotFound';
 import ShowTopApp from './ShowTopApp/ShowTopApp';
 
-const TopAppsSection = ({ heroDataPromise }) => {
-  const data = heroDataPromise;
+const TopAppsSection = ({ data }) => {
+  const appsData = data;
+
+  if (appsData.length === 0) return <NoData />;
 
   return (
     <div>
@@ -11,7 +14,7 @@ const TopAppsSection = ({ heroDataPromise }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-        {data.slice(0, 8).map(app => (
+        {appsData.slice(0, 8).map(app => (
           <ShowTopApp key={app.id} app={app}></ShowTopApp>
         ))}
       </div>
