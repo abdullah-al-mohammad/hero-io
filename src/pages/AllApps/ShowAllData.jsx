@@ -17,7 +17,7 @@ const ShowAllData = ({ app }) => {
   return (
     <>
       <Link to={`/details/${id}`}>
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-100 shadow-sm p-5">
           <figure>
             <img className="w-40" src={image} alt="apps" />
           </figure>
