@@ -12,11 +12,6 @@ const ShowMyApp = ({ app, handleUninstall }) => {
   const download = app.downloads * 10;
   const review = app.reviews * 10;
 
-  // const handleUninstall = id => {
-  //   removeStoredApp(id);
-  //   // removeStoredApp('');
-  // };
-
   return (
     <>
       <div className="flex justify-between items-center mb-8">
@@ -36,7 +31,11 @@ const ShowMyApp = ({ app, handleUninstall }) => {
             </div>
           </div>
         </div>
-        <button onClick={() => handleUninstall(app.id)} className="btn bg-[#00D390]" type="button">
+        <button
+          onClick={() => handleUninstall(app.id, app.title)}
+          className="btn bg-[#00D390]"
+          type="button"
+        >
           uninstall
         </button>
       </div>
