@@ -25,12 +25,12 @@ const MyInstallation = () => {
     return <span>loading ... </span>;
   }
 
-  const handleUninstall = id => {
+  const handleUninstall = (id, title) => {
     removeStoredApp(id);
 
     const updated = installedIds.filter(appId => appId !== id);
     setInstalledIds(updated);
-    toast.success('App Uninstall successfully');
+    toast.success(`${title} App Uninstall successfully`);
   };
 
   return (
