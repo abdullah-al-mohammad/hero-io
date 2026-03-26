@@ -6,16 +6,18 @@ import { Bar, ComposedChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from '
 import downloadImage from '../../assets/icon-downloads.png';
 import rating from '../../assets/icon-ratings.png';
 import reviewImage from '../../assets/icon-review.png';
+import { addStoredApp, getAppData } from '../../localStorage/localStorage';
+import NoData from '../NotFound/NotFound';
 const AppDetails = () => {
-  const [installed, setInstalled] = useState(false);
+  const [installedIds, setInstalledIds] = useState(getAppData());
   const { id } = useParams();
   const data = useLoaderData();
 
+  const installed = installedIds.includes(parseInt(id));
   const showData = data.find(app => app.id === parseInt(id));
   if (!showData) {
-    return <span>data not found...</span>;
+    return <NoData />;
   }
-
   const { image, title, downloads, ratingAvg, reviews, ratings, description } = showData;
 
   const formatLargeNumber = num => {
@@ -28,14 +30,18 @@ const AppDetails = () => {
   };
   const download = downloads * 10;
   const review = reviews * 10;
-
-  const handleInstall = () => {
-    setInstalled(true);
-    if (!installed) {
-      toast.success(`${title} installed successfully 🎉`);
-    }
-  };
   const ratingData = ratings.slice().reverse();
+
+  const handleInstall = id => {
+    if (installed) return;
+
+    const updated = [...installedIds, id];
+    setInstalledIds(updated);
+    addStoredApp(id);
+
+    toast.success(`${title} installed successfully`);
+  };
+
   return (
     <>
       <div className="card lg:card-side bg-base-100 shadow-sm">
@@ -66,7 +72,7 @@ const AppDetails = () => {
             </div>
           </div>
           <button
-            onClick={handleInstall}
+            onClick={() => handleInstall(parseInt(id))}
             disabled={installed}
             className={`btn w-52 text-white ${
               installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'
@@ -76,7 +82,7 @@ const AppDetails = () => {
           </button>
         </div>
       </div>
-      <div className="w-full h-[300px] pb-5">
+      <div className="w-full h-75 pb-5">
         <h3 className="mt-5">Ratings</h3>
         <ResponsiveContainer className={'pb-5'}>
           <ComposedChart layout="vertical" data={ratingData}>
