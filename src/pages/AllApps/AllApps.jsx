@@ -4,11 +4,16 @@ import useData from '../../hooks/useData/useData';
 import ShowAllData from './ShowAllData';
 
 const AllApps = () => {
-  const allApps = useData();
-  // const inputRef = useRef('');
+  const { data, loading } = useData();
   const [searchQuery, setSearchQuery] = useState('');
-
-  const filterApps = allApps.filter(app =>
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <span className="loading loading-spinner loading-xl"></span>
+      </div>
+    );
+  }
+  const filterApps = data.filter(app =>
     app.title.toLowerCase().includes(searchQuery.toLocaleLowerCase())
   );
 
@@ -22,8 +27,8 @@ const AllApps = () => {
       <p className="mb-12 text-center text-Slate-Blue">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
-      <div className="flex justify-between items-center">
-        <h4 className="font-bold mb-8">({allApps.length}) Apps Found</h4>
+      <div className="flex justify-between items-center mb-8">
+        <h4 className="font-bold">({data.length}) Apps Found</h4>
         <div>
           <label className="input">
             <IoIosSearch />
